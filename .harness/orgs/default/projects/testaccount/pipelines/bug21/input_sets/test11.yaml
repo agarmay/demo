@@ -1,0 +1,19 @@
+inputSet:
+  name: test11
+  identifier: test11
+  orgIdentifier: default
+  projectIdentifier: testaccount
+  pipeline:
+    identifier: bug21
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_3
+                    type: Wait
+                    spec:
+                      duration: 10s
