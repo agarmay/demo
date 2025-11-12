@@ -1,0 +1,28 @@
+pipeline:
+  name: bug21
+  identifier: bug21
+  projectIdentifier: testaccount
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: s1
+        identifier: s1
+        description: ""
+        type: Custom
+        spec:
+          execution:
+            steps:
+              - step:
+                  type: Wait
+                  name: Wait_1
+                  identifier: Wait_1
+                  spec:
+                    duration: 10s
+              - step:
+                  type: Wait
+                  name: Wait_2
+                  identifier: Wait_2
+                  spec:
+                    duration: 10s
+        tags: {}
