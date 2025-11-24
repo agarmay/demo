@@ -1,0 +1,19 @@
+inputSet:
+  name: inputSets1
+  identifier: inputSets1
+  orgIdentifier: Ng_Pipelines_K8s_Organisations
+  projectIdentifier: PipelineInputSetsPageTest
+  pipeline:
+    identifier: testInputSetsPage
+    stages:
+      - stage:
+          identifier: s1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
